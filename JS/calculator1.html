@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        border: none;
+        text-decoration: none;
+        box-decoration-break: clone;
+        /* box-shadow: 0 0 3px #1670BE; */
+        width: 15px;
+        outline-offset: 0px;
+        outline: none;
+    }
+
+    button {
+        border: none;
+    }
+
+    #input {
+        border: 1px solid;
+        width: 120px;
+    }
+</style>
+
+<body>
+    <form action="">
+        <label for="">Enter two number for addition :-</label>
+        <div id="input">
+            <input type="text" id="inp1" value="">
+            <input type="text" onclick="getAdd()">
+            <input type="text" id="inp2" value="">
+        </div>
+    </form>
+
+    <br>
+    <label for="">Enter two number for Substraction :-</label>
+    <div id="input">
+        <input type="text" id="inp3" value="">
+        <input type="text" onclick="getSub()">
+        <input type="text" id="inp4" value="">
+    </div>
+    <br>
+    <label for="">Enter two number for multiplication :-</label>
+    <div id="input">
+        <input type="text" id="inp5" value="">
+        <input type="text" onclick="getMul()">
+        <input type="text" id="inp6" value="">
+    </div>
+    <br>
+    <label for="">Enter two number for division :-</label>
+    <div id="input">
+        <input type="text" id="inp7" value="">
+        <input type="text" onclick="getDiv()">
+        <input type="text" id="inp8" value="">
+    </div>
+    <!-- <button onclick="getAdd()">+</button> -->
+    <!-- <button onclick="getSub()">-</button>
+    <button onclick="getMul()">*</button>
+    <button onclick="getDiv()">/</button> -->
+    <!-- <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div> -->
+    <br>
+    <br>
+    <p id="print"></p>
+
+    <script>
+        function getAdd() {
+            let inp1 = document.getElementById("inp1").value;
+            let inp2 = document.getElementById("inp2").value;
+            let print = document.getElementById("print");
+            print.style.fontSize = "70px";
+            print.style.color = "blue";
+            print.innerHTML = Number(inp1) + Number(inp2);
+        }
+
+
+        function getSub() {
+            let inp1 = document.getElementById("inp3").value;
+            let inp2 = document.getElementById("inp4").value;
+            let print = document.getElementById("print");
+            print.style.color = "red"
+            print.style.fontSize = "70px"
+            print.innerHTML = Number(inp1) - Number(inp2)
+        }
+
+        function getMul() {
+            let inp1 = document.getElementById("inp5").value;
+            let inp2 = document.getElementById("inp6").value;
+            let print = document.getElementById("print");
+            print.style.color = "red"
+            print.style.fontSize = "70px"
+            print.innerHTML = Number(inp1) * Number(inp2)
+        }
+
+        function getDiv() {
+            let inp1 = document.getElementById("inp7").value;
+            let inp2 = document.getElementById("inp8").value;
+            let print = document.getElementById("print");
+            print.style.color = "red"
+            print.style.fontSize = "70px"
+            print.innerHTML = Number(inp1) / Number(inp2)
+        }
+    </script>
+</body>
+
+</html>

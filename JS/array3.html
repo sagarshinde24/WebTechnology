@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array created by new keyword</title>
+</head>
+<body>
+    <script>
+        //ARRAY BY USING NEW KEYWORLD
+        let arr1 = new Array("hello", 10, true, {name:"object"});
+        console.log(arr1)
+        arr1[0]='updated';
+        console.log(arr1)
+
+        //FUNCTION ARE ALSO BE DECEARE IN ARRAY
+        let fun = ['hello', true, function(a,b){return a*b}]
+        console.log(fun);
+        console.log(fun[2](20,30));
+        fun[3]={name:'obj',type:"object"}
+        console.log(fun);
+        fun[4]=function(){console.log("hello this is fun")}
+        console.log(fun);
+        console.log(fun[4]);
+    </script>
+</body>
+</html>

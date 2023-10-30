@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object creation method
+    const userdetail = {
+        firstName:"Rutvik",
+        lastName:"Bhojane",
+        dateOfB:1999,
+        getName:function(){
+            return "user name"+this.firstName+" "+this.lastName+" ";
+        }
+
+    }
+    const user = Object.create(userdetail);
+    console.log(user.getName());
+
+    //Constructor method
+
+    function user1(firstName,lastName){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.getName = function(){
+            return "User name :" + this.firstName + this.lastName;
+        }
+    }
+    const us = new user1("Rutvik","Bhojane");
+    console.log(us.getName());
+
+    //object literals
+
+    const userdetail1 = {
+        firstName:"Rutvik",
+        lastName:'Bhojane'
+    }
+    console.log(userdetail1);
+
+    
+    </script>
+    
+</body>
+</html>

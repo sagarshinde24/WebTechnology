@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 800px;
+        width: 100%;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #parent{
+        height: 600px;
+        width: 250px;
+        border: 1px solid;
+        border-radius: 95px;
+        background-color: grey;
+    }
+    .bulb{
+        height: 150px;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-top: 45px;
+        margin-left: 45px;
+        background-color: white;
+        
+       
+    }
+    .blink{
+        animation-name: signal;
+        animation-delay: -2s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes signal{
+        50%{
+            opacity: 0;
+        }
+        
+
+    }
+   
+
+</style>
+<body>
+    <div id="parent">
+        <div class="bulb" id="bulb1"></div>
+        <div class="bulb" id="bulb2"></div>
+        <div class="bulb blink" id="bulb3"></div>
+    </div>
+    <script>
+        var signal =prompt("enter your input");
+        if (signal=="stop") {
+            document.getElementById("bulb1").style.backgroundColor="red"
+        } else if (signal=="caution") {
+            document.getElementById("bulb2").style.backgroundColor="orange"
+        } else if (signal=="start") {
+            document.getElementById("bulb3").style.backgroundColor="green"
+        } else {
+            
+        } {
+            
+        } {
+            
+        }
+    </script>
+</body>
+</html>

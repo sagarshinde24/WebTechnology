@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display screen in mobile , laptop , and  tablet</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parent{
+        height: 800px;
+        width: 100%;
+        background-color: dodgerblue;
+        border: 1px solid ;
+        display: flex;
+        justify-content: space-evenly ;
+
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        line-height: 100px;
+        text-align: center;
+    }
+    /* Mobile device range 0px to 750px */
+    @media(min-width:0px) and (max-width: 750px)
+    {
+        .parent{
+            height: 400px;
+            width: 100%;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border:1px solid;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            font-size: 10px;
+        }
+    }
+    /* Tab range 751px to 1000px */
+    @media(min-width:751px) and (max-width:1000px)
+    {
+        .parent{
+            height: 1000px;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box{
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            line-height: 80px;
+            background-image: url(/picture.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            border-radius: 30px;
+        }
+    }
+</style>
+<body>
+    <div class="parent">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+    </div>
+</body>
+</html>box

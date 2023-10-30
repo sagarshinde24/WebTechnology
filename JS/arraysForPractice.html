@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice on array</title>
+</head>
+<body>
+    <script>
+        // Array is a continuous block of memory which contain homogenious and hetrogenious element arrange in sequene of indexing number is known as array.
+        let arr = [{name:"Rutvik"},45,"Piyush",65.34,9960738039,true,false, arr1 = ["Yash","Rohit","dada",{rollNo : 47874}],"Ayush",function addition(a,b) {return a+b}];
+        // arr[9].addition(12,10);   wrong way
+        // console.log(addition(12,10)); wrong way
+        console.log(arr[9](12,34));
+        console.log(arr);
+        arr[8]="Gangu";
+        console.log(arr);
+
+        let b = arr.filter((arr)=>{
+            return arr>40;
+        })
+        console.log(b);
+
+    </script>
+</body>
+</html>

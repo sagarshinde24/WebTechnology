@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <select name="" id="car" onchange="getChange()">
+        <option value="BUGATI">BUGATI</option>
+        <option value="ROLLS ROYAL">ROLLS ROYA</option>
+        <option value="LAMBO">LAMBO</option>
+        <option value="TATA">TATA</option>
+        <option value="AUDI">AUDI</option>
+    </select>
+    <p id="print"></p>
+    <script>
+        function getChange(){
+            let car=document.getElementById("car").value
+            let pri=document.getElementById("print")
+            pri.innerHTML="YOUR SELECTED CAR IS "+car;
+            pri.style.color="red"
+            pri.style.fontSize="30px"
+        }
+    </script>
+
+
+
+</body>
+</html>

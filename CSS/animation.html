@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    div{
+        height: 180px;
+        width: 180px;
+        border: 1px solid;
+        border-radius: 50%;
+        animation-name: color;
+        margin: 0 auto;
+        margin-top: 100px;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+    @keyframes color 
+    {
+        10%{
+            background-color: red;
+        }
+        20%{
+            background-color:white;
+        }
+        30%{
+            background-color: violet;
+        }
+        40%{
+            background-color:green;
+        }
+        50%{
+            background-color: pink;
+        }
+        60%{
+            background-color: hotpink ;
+        }
+        70%{
+            background-color: rgb(47, 136, 69);
+        } 
+        80%{
+            background-color: rgb(131, 102, 128);
+        }
+        90%{
+            background-color: rgb(24, 45, 206);
+        }
+        100%{
+            background-color: rgb(195, 203, 38);
+        } 
+        
+    }
+</style>
+<body>
+    <div id="animation"></div>
+</body>
+</html>

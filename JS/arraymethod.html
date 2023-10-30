@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array method</title>
+</head>
+<body>
+    <script>
+        //push():it is used to add the element from last index
+        //note: we can add more than one element.
+        let array= [1,2,4,5];
+        // console.log(array);
+        // array.push(5,"hello","bye");
+        // console.log(array);
+
+        //pop(): IT IS USED TO REMOVE AN ELEMENT FRO LAST.
+        //NOTE: WE CANT REMOVE MULTIPLE ELEMENT SIMUTANIOUSLY
+        // console.log(array.pop());
+        // console.log(array);
+
+        //unshift() :IT IS USED TO ADD MULTIPLE ELEMENT FORM START INDEX, AND IT WILL RETURNS US UPDATED LENGTH OF AN ARRAY
+        // console.log(array.unshift(20,20,30))
+        // console.log(array);
+
+        //shift():IT IS USED TO ADD RMOVE AN ELEMENT FROM START INDEX, AND IT WILL RETURN DELETED ELEMENT
+        //NOTE: WE CANT DELETE MORE THAN ONE ELEMENT.
+       
+        //reverse() : IT IS UDED TO REVERSE AND ARRAY
+        //console.log(array.reverse());
+
+        //sort() : 
+        let sort1=[10,100,20,200,50,60,10];
+        // console.log(sort1.sort());
+        
+        let sort2=["banana","apple","sopota",1,4,5,2]
+        // console.log(sort2.sort());
+
+        // includes(): THIS IS USED TO CHECK THE ELEMENT WETHER IT IS PRESENT OR NOT 
+        // IF PRESENT MEANS IT WILL RETURN TRUE OR FLASE.
+        let array2=["hello",true,"bye",10,20]
+       // console.log(array2.includes("apple"));
+
+       //indexof() : IT IS USED TO CHECK THE INDEX OF AN ELEMENT
+    //    console.log(array2.indexOf("bye"));
+
+       //slice(start index, last index): IT IS USED TO SPLITS THE ARRAY INTO NO. OF FRACTIONS
+       let array3=[1,2,3,4,5,6,7,8]
+       console.log(array3);
+       console.log(array3.slice(2,5));
+
+       // splice(): IT ISN USED TO DELETE AND ELEMENT AND REPLACE THE DELETED
+       //ELEMENT BY USING NEW ELEMENTS.
+       console.log(array3.splice(1,5,100,200,300));
+       console.log(array3);
+    </script>
+</body>
+</html>

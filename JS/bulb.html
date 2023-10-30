@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bulbm{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .bulbm1 {
+        display: flex;
+        justify-content: start;
+    }
+</style>
+<body>
+    <div class="bulbm">
+        <div id="bulb" class="bulbm"style="background-color: blue;"></div>
+    </div>
+    <div class="bulbm">
+    <input type="button" value="ON" onclick="getColor()">
+    <input type="button" value="OFF" onclick="removecolor()">
+    </div>
+    <script>
+        function getColor(){
+            let ele=document.getElementById("bulb")
+            ele.style.backgroundColor=prompt("Enter your color")
+        }
+        function removecolor()
+        {
+            let ele2=document.getElementById("blub")
+            ele2.style.backgroundColor="white"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         let obj = {
+            key1: "value1",
+            key2: "value2",
+            key3: "value3",
+            key4: "value4"
+
+        }
+        
+        
+        obj.key5 = "value5"
+        console.log(obj);
+
+        // delete(): IT IS USED TO DELETE THE KEY AND VALUE PAIR FROM AN OBJECT
+        delete(obj.key5)
+        console.log(obj);
+
+        //seal() : IT IS USED TO THE OBJECT, IT MEANS THAT WE CANT ADD NEW KEY AND VALUE PAIR BUT WE CAN MODIFY EXISTING ONE.
+            object.seal(obj)
+            obj.key5 = "value5"
+            console.log(obj);
+
+        // value is updated
+            obj.key4="value4 is updated"
+            console.log(obj)
+
+        //freeze() : IT IS USED TO FREEZE THE OBJECT. MEANS WE CANT DO ANY MONIFICATION.
+        object.freeze(obj)
+        obj.key4="update"
+        console.log(obj)
+        obj.key5="value5"
+        console.log(obj);
+    
+
+        //key(): IT IS USED TO FRTCHED THE KEYS OF AN OBJECT
+            console.log(Object.keys(obj));
+
+        //values() : IT IS USED TO FETCHED THE VALUE OF AN OBJECT 
+            console.log(Object.values(obj));
+            
+        
+       // console.log(Object.entries(obj));
+
+       //assign() : IT IS USED TO MERGE MORE THAN ONE OBJECT TOGETHER
+       let obj1={
+            key1:"value1",
+            key2:"value2",
+        
+       }
+       let obj2={
+            key1:"value5",
+            key3:"value3",
+        
+       }
+       console.log(Object.assign(obj1,obj2));
+
+        
+    </script>
+</body>
+
+</html>

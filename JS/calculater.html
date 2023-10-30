@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="Enter 1st number" value=""></input>
+    <input type="text" id="inp2" placeholder="Enter 2nd number" value=""></input>
+    <br>
+    <br>
+    <button onclick="getadd()">ADD</button>
+    <button>SUB</button>
+    <button>MUL</button>
+    <button>DIV</button>
+    
+    <p id="print"></p>
+    <script>
+         let input1=document.getElementById("inp1").value;
+         let input2=document.getElementById("inp2").vlaue;
+         function getadd() {
+            let print=document.getElementById("print")
+            print.style.color="red";
+            print.style.fontSize="70px";
+            print.innerHTML= Number(input1) + Number(input2);
+        }
+    </script>
+</body>
+</html>

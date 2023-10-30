@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conic {
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        #conic1 {
+            background-image: conic-gradient(red 0deg,red 45deg,yellow 45deg,yellow 90deg,green 90deg,green 135deg,pink 180deg,pink 215deg,blue 215deg,blue 270deg,aqua 270deg,aqua 315deg,white 315deg,white 360deg);
+        }
+        #conic2{
+            background-image: conic-gradient(from 90deg, red, yellow, blue);
+        }
+        #conic3{
+            background-image: repeating-conic-gradient(red 10%,green 20%, yellow 30%);
+        }
+        #conic4{
+           background-image:  repeating-radial-gradient(red 0 8%, yellow 8% 16%, blue 16% 24%);
+
+        }
+        #conic5{
+            background-image: conic-gradient(red, yellow,green , white);
+        }
+        #conic6{
+            background-image: conic-gradient(at 60% 45%,red,yellow, green)
+
+        }
+        #conic7{
+            background-image: conic-gradient(white 0deg, white 90deg,blue 90deg, blue 180deg, white 180deg, white 270deg, blue 270deg, blue 360deg);
+            
+        }
+        #conic8{
+            background-image: conic-gradient(black 0deg, black 45deg, green 45deg, green 90deg,green 90deg, green 135deg, black 135deg, black 225deg, green 225deg, green 315deg, black 315deg, black 360deg );
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conic" id="conic1"></div>
+    <div class="conic" id="conic2"></div>
+    <div class="conic" id="conic3"></div>
+    <div class="conic" id="conic4"></div>
+    <div class="conic" id="conic5"></div>
+    <div class="conic" id="conic6"></div>
+    <div class="conic" id="conic7"></div>
+    <div class="conic" id="conic8"></div>
+
+</body>
+
+</html>

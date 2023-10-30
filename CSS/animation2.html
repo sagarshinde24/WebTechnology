@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaiton2</title>
+</head>
+<style>
+    #box{
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        margin: 0 auto;
+    }
+    #ball{
+        height: 50px;
+        width: 50px;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-left: 640px;
+        animation: ball;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        position: relative;
+    }
+    @keyframes ball{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 0px;
+            left: 200px;
+            background-color: red;
+        }
+        50%{
+            top: 250px;
+            left: 200px;
+            background-color: green;
+            height: 100px;
+            width: 100px;
+        }
+        75%{
+            top: 250px;
+            left: -50px;
+            background-color:blue;
+        }
+        100%{
+            top: 0px;
+            left: -50px;
+            background-color:grey;
+        }
+
+    }
+</style>
+<body>
+    <div id="ball"></div>
+    <div id="box"></div>
+</body>
+</html>

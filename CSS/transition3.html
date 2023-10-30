@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trasition function timing</title>
+</head>
+<style>
+    .box{
+        height: 100px;
+        width: 200px;
+        line-height: 100px;
+        text-align: center;
+        color: white;
+        background-color: red;
+        font-size: 20px;
+        border: 1px solid black;
+        margin-top: 20px;
+        transition-property: width;
+        transition-duration: 2s;
+    }
+    #box1{
+        transition-timing-function: linear;
+    } 
+    #box2{
+        transition-timing-function: ease;
+    }
+    #box3{
+        transition-timing-function: ease-in;
+    }
+    #box4{
+        transition-timing-function: ease-out;
+    }
+    #box5{
+        transition-timing-function: ease-in-out;
+        translate: ;
+    }
+    .box:hover{
+        width: 100%;
+    }
+    
+</style>
+<body>
+    <div class="box" id="box1">LINEAR</div>
+    <div class="box" id="box2">EASE</div>
+    <div class="box" id="box3">EASE-IN</div>
+    <div class="box" id="box4">EASE-OUT</div>
+    <div class="box" id="box5">EASE-IN-OUT</div>
+</body>
+</html>

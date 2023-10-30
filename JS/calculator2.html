@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="enter your 1st digit" value="">
+    <input type="text" id="inp2" placeholder="enter your 2nd digit">
+    <br>
+    <br>
+    <button onclick="getAdd()">ADD</button>
+    <button onclick="getSub()">SUB</button>
+    <button onclick="getMul() ">MUL</button>
+    <button onclick="getDiv()">DIV</button>
+    <p id="print"></p>
+    <script>
+         
+        function getAdd() {
+        let inp1=document.getElementById("inp1").value;
+         let inp2=document.getElementById("inp2").value;
+         let print=document.getElementById("print");
+         print.style.color="red"
+         print.style.fontSize="70px"
+         print.innerHTML=Number(inp1)+Number(inp2)
+
+        }
+
+        function getSub() {
+         let inp1=document.getElementById("inp1").value;
+         let inp2=document.getElementById("inp2").value;
+         let print=document.getElementById("print");
+         print.style.color="red"
+         print.style.fontSize="70px"
+         print.innerHTML=Number(inp1)-Number(inp2)
+        }
+        function getMul() {
+         let inp1=document.getElementById("inp1").value;
+         let inp2=document.getElementById("inp2").value;
+         let print=document.getElementById("print");
+         print.style.color="red"
+         print.style.fontSize="70px"
+         print.innerHTML=Number(inp1)*Number(inp2)
+        }
+        function getDiv() {
+         let inp1=document.getElementById("inp1").value;
+         let inp2=document.getElementById("inp2").value;
+         let print=document.getElementById("print");
+         print.style.color="red"
+         print.style.fontSize="70px"
+         print.innerHTML=Number(inp1)/Number(inp2)
+        }
+    </script>
+</body>
+</html>

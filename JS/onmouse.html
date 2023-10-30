@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 400px;
+        width: 400px;
+        border: 1px solid;
+    }
+</style>
+<body>
+    <div id="box" onmouseover="getOnMouseOver()" onmouseout="getOnMouseOut()" style="background-color:green ;">THIS IS ONMOUSEOUT EVENT LISTENER</div>
+    <script>
+        function getOnMouseOut(){
+            let bx1=document.getElementById("box")
+            bx1.style.backgroundColor="red";
+            bx1.innerHTML="THIS IS ONMOUSEOVER OUT EVENT LISTENER";
+
+        }
+        function getOnMouseOver(){
+            let bx2=document.getElementById("box")
+            bx2.style.backgroundColor="green"
+            bx2.innerHTML="THIS IS ONMOUSEOUT OVER EVENT LISTENER"
+        }
+    </script>
+</body>
+</html>

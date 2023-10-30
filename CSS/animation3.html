@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation3</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #parent{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: grey;
+        
+
+    }
+    #child{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-image:url(/picture.jpg) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: slide1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes slide1{
+        form{
+            transform: perspective(800px) rotateY(0deg);
+            /* transform-origin: top right; */
+        }
+        to{
+            transform: perspective(800px), rotateY(360deg);
+            transform-origin: top right;
+            /* translate: 100px 20px; */
+        }
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

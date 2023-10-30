@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial gradient</title>
+    <style>
+        .rad {
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+        }
+
+        #rad1 {
+            background-image: radial-gradient(red, green , yellow);
+        }
+        #rad2 {
+            background-image: radial-gradient(circle, red 5%, white 6%, orange );
+        }
+        #rad3 {
+            background-image: radial-gradient( red, pink, yellow);
+        }
+        #rad4 {
+            background-image: repeating-radial-gradient(circle, red 5%, yellow 7%, blue 10%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rad" id="rad1"></div>
+    <div class="rad" id="rad2"></div>
+    <div class="rad" id="rad3"></div>
+    <div class="rad" id="rad4"></div>
+</body>
+
+</html>
